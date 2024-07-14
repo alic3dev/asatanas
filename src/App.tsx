@@ -55,13 +55,10 @@ export function App() {
 
     let frameHandle: number
     let frameHandleTwo: number
-    let prevTime: number = 0
+
     let frameCount: number = 0
 
-    const animationFrame: FrameRequestCallback = (
-      time: DOMHighResTimeStamp,
-    ): void => {
-      const delta: number = time - prevTime
+    const animationFrame: FrameRequestCallback = (): void => {
       const evenFrame: boolean = frameCount % 2 === 0
 
       ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -143,7 +140,6 @@ export function App() {
       ctx.putImageData(imageData, 0, 0)
 
       frameCount++
-      prevTime = time
       frameHandle = window.requestAnimationFrame(animationFrame)
     }
     frameHandle = window.requestAnimationFrame(animationFrame)
@@ -152,7 +148,7 @@ export function App() {
       window.cancelAnimationFrame(frameHandle)
       window.cancelAnimationFrame(frameHandleTwo)
     }
-  }, [appString])
+  }, [appString, appStringMax])
 
   const onMouseMove = React.useCallback<MouseEventHandler<HTMLCanvasElement>>(
     (event: React.MouseEvent<HTMLCanvasElement>): void => {
