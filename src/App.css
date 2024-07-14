@@ -1,38 +1,17 @@
+@keyframes huerot {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
 canvas {
   height: 100%;
   width: 100%;
 
   object-fit: cover;
-}
 
-.text {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  margin: 0;
-  padding: 3vw 3vw;
-
-  font-size: 2.5vw;
-  color: white;
-
-  mix-blend-mode: difference;
-}
-
-.text.reversed {
-  left: unset;
-  right: 0;
-
-  transform: scaleX(-1);
-}
-
-.text.bottom {
-  top: unset;
-  bottom: 0;
-
-  transform: scaleY(-1);
-}
-
-.text.bottom.reversed {
-  transform: scale(-1);
+  animation: huerot 7227ms ease-in-out 0s infinite forwards;
 }
