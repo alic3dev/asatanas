@@ -7,35 +7,16 @@ interface Position<T = number> {
   y: T
 }
 
-export function App() {
-  const appString: string = `
-    BeelzeAboveBelowOhHowItShowsWhatWeDontKnowYetSeemToBestow. 
-    To Say no mo' of what is in store, it's quite a Bore, my lovely deadly whore. 
-
-    Calling from or calling to, all that's known is what's shown to you. 
-    Vero we, des clancasi, mes peitos es fre, es neidos es reit. 
-    Porle porle, es muenos la clay. Forlei ze no, de ino es mo. 
-
-    Aqwerie te ni, esta un miedras es zantos e reit. 
-    Plonas planos esquipas te reidos, alto es mo, to no geu xay... 
-    
-    Lotos y undos y todos y gue. Weirtas gholl po heitras y tu.
-
-    Derquirtos es las, habochos e e dou.
-
-    Abado es mau.
-
-    Li-tilth es filth.
-
-    Forever stuck in your own wilt.
-  `
+export function App(): React.ReactNode {
+  const appString: string = `'lwl:F$*2kpajdO(*kjksapkJDJAB%JFJjs0(*#$)-=209*$#IJ2oa2khjdf0s9jhv#$)iFz0ek220j2koJFlw8u3FJGVFHalkJFJlwl:FJDJAB%$*'adsfjue93qwe"ASDFicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj34jkhjdf0s9jhvkjoejaCZKozEerj2Fz0ek2200(jeQjl20JDFKBVj2koaJBU!(@#*983spJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"A'adsfjue93oaicjJFo*(WRhj320JoiRYELSDF@#(*@#)((*UeuiweDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalJFlw8u3FJGVNSS??><f,/siqwe"ASD'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#0NSS??><f,/s-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"we*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*UeuieQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJFlw8u3FJGVNSS??><f,/sRYEL@#(*@#)((*Ueuiwe*(WRhj32iqwe"ASDF'adsfjue93oaicjJFooi0JDFKBVCZKJBU!(@#*9834jkhjdf0s9jhvkjoeja0(jeQjlsozEerj2Fz0ek220j2koapJpajdOFHalkJFJlwl:FJDJAB%$*2ks0(*#$)-=209*$#IJQjlsozEerFlw8u3FJGVNSS??><f,/siqwe"ASDF'adsfjue93oaicjJFooiRYEL@#(*@#)((*Ueuiwe*(WRhj320JDFKBVCZKJBU!(@#*9834joeja0(je'`
 
   const appStringMax = appString
     .split('')
-    .reduce(
-      (p: number, c: string) => (p > c.charCodeAt(0) ? p : c.charCodeAt(0)),
-      0,
-    )
+    .reduce((p: number, c: string): number => {
+      const charCode = c.charCodeAt(0)
+
+      return p > charCode ? p : charCode
+    }, 0)
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null)
   const mousePosition = React.useRef<Position>({ x: 0, y: 0 })
@@ -59,35 +40,37 @@ export function App() {
     let frameCount: number = 0
 
     const animationFrame: FrameRequestCallback = (): void => {
-      const evenFrame: boolean = frameCount % 2 === 0
+      const evenFrame: boolean = Math.floor(frameCount) % 2 === 0
 
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       const imageData: ImageData = new ImageData(canvas.width, canvas.height)
 
-      const cache: Position<number[]> = {
-        x: [],
-        y: [],
-      }
-
-      const mouseSum: number = mousePosition.current.x + mousePosition.current.y
+      // const cache: Position<number[]> = {
+      //   x: [],
+      //   y: [],
+      // }
 
       for (let x: number = 0; x < imageData.width; x++) {
-        cache.x.push(
-          Math.abs(
-            Math.sin(
-              (appString.charCodeAt(
-                (x + frameCount + mousePosition.current.x) % appString.length,
-              ) /
-                appStringMax) *
-                Math.PI,
-            ),
-          ),
-        )
+        const xProgress: number = x / imageData.width
+
+        // cache.x.push(
+        //   Math.abs(
+        //     Math.sin(
+        //       (appString.charCodeAt(
+        //         (x + frameCount + mousePosition.current.x) % appString.length,
+        //       ) /
+        //         appStringMax) *
+        //         Math.PI,
+        //     ),
+        //   ),
+        // )
 
         for (let y: number = 0; y < imageData.height; y++) {
           const yOffset: number = y * imageData.width
           const index: number = (x + yOffset) * 4
+
+          const yProgress: number = y / imageData.height
 
           if (
             (evenFrame && x % 2 !== 0) ||
@@ -103,43 +86,36 @@ export function App() {
             continue
           }
 
-          if (!cache.y[y]) {
-            cache.y.push(
-              Math.abs(
-                Math.sin(
-                  (appString.charCodeAt(
-                    (y + frameCount + mousePosition.current.y) %
-                      appString.length,
-                  ) /
-                    appStringMax) *
-                    Math.PI,
-                ),
-              ),
-            )
-          }
+          // if (!cache.y[y]) {
+          //   cache.y.push(
+          //     Math.abs(
+          //       Math.sin(
+          //         (appString.charCodeAt(
+          //           (y + frameCount + mousePosition.current.y) %
+          //             appString.length,
+          //         ) /
+          //           appStringMax) *
+          //           Math.PI,
+          //       ),
+          //     ),
+          //   )
+          // }
 
-          const valThree: number = Math.abs(
-            Math.sin(
-              (appString.charCodeAt(
-                (frameCount + x + y + mouseSum) % appString.length,
-              ) /
-                appStringMax) *
-                Math.PI,
-            ),
-          )
-
-          const val = cache.x[x] + cache.y[y] + valThree > 2 ? 255 : 0
-
-          imageData.data[index] = val * cache.x[x]
-          imageData.data[index + 1] = val * cache.y[y]
-          imageData.data[index + 2] = val * valThree
+          imageData.data[index] = Math.abs(Math.sin(xProgress * Math.PI)) * 255
+          imageData.data[index + 1] = yProgress * 255
+          imageData.data[index + 2] = ((xProgress + yProgress) / 2) * 255
           imageData.data[index + 3] = 255
+
+          // imageData.data[index] = cache.x[x] * 255
+          // imageData.data[index + 1] = cache.y[y] * 255
+          // imageData.data[index + 2] = ((cache.x[x] + cache.y[y]) / 2) * 255
+          // imageData.data[index + 3] = 255
         }
       }
 
       ctx.putImageData(imageData, 0, 0)
 
-      frameCount++
+      frameCount += 0.3
       frameHandle = window.requestAnimationFrame(animationFrame)
     }
     frameHandle = window.requestAnimationFrame(animationFrame)
