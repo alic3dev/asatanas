@@ -6,6 +6,7 @@ import { createBrowserRouter, redirect, RouterProvider } from 'react-router-dom'
 
 import { App } from './App.tsx'
 import { AppTwo } from './AppTwo.tsx'
+import { AppThree } from './AppThree.tsx'
 import { Alic3 } from './Alic3.tsx'
 
 import './index.css'
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/2',
     element: <AppTwo />,
+  },
+  {
+    path: '/3',
+    element: <AppThree />,
   },
   {
     path: '*',
