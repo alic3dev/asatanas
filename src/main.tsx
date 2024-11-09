@@ -6,6 +6,7 @@ import { createBrowserRouter, redirect, RouterProvider } from 'react-router-dom'
 
 import { App } from './App.tsx'
 import { AppTwo } from './AppTwo.tsx'
+import { Alic3 } from './Alic3.tsx'
 
 import './index.css'
 
@@ -29,6 +30,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <div className="alic3-title">
+      <Alic3 />
+    </div>
     <Analytics />
   </React.StrictMode>,
 )
