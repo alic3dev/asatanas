@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) translate(-49%, -52%);
+
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+
+    filter: hue-rotate(360deg);
+  }
+}
+
+.header {
+  position: fixed;
+  top: 8rem;
+  left: 4rem;
+
+  font-size: 10rem;
+  line-height: 0;
+
+  color: #ffffff;
+
+  margin: 0;
+  padding: 0;
+
+  z-index: 10000;
+
+  mix-blend-mode: soft-light;
+}
+
+.pent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  font-size: 30rem;
+  line-height: 0;
+
+  margin: 0;
+  padding: 0;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 10000;
+
+  mix-blend-mode: soft-light;
+}
+
+.num {
+  position: fixed;
+  bottom: 0rem;
+  right: 0;
+
+  color: #ffffff;
+
+  font-size: 20rem;
+  line-height: 0;
+
+  margin: 0;
+  padding: 0;
+
+  z-index: 10000;
+
+  mix-blend-mode: soft-light;
+}
+
+.intro-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 10;
+
+  user-select: none;
+}
+
+.intro-block-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  mix-blend-mode: difference;
+
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    animation: rotation 270052ms linear 0s infinite reverse;
+
+    .intro-block {
+      transform: scale(2) rotate(54deg);
+    }
+  }
+
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+    animation: rotation 200500ms linear 0s infinite forwards;
+
+    .intro-block {
+      transform: scale(1.66) rotate(25deg);
+    }
+  }
+
+  &:nth-of-type(5),
+  &:nth-of-type(6) {
+    animation: rotation 300000ms linear 0s infinite forwards;
+
+    .intro-block {
+      transform: scale(1.33) rotate(194deg);
+    }
+  }
+
+  &:nth-of-type(7),
+  &:nth-of-type(8) {
+    animation: rotation 282001ms linear 0s infinite reverse;
+
+    .intro-block {
+      transform: scale(1.8) rotate(82deg);
+    }
+  }
+
+  &:nth-of-type(9),
+  &:nth-of-type(10) {
+    animation: rotation 370040ms linear 0s infinite forwards;
+
+    .intro-block {
+      transform: scale(1.489) rotate(289deg);
+    }
+  }
+
+  &:nth-of-type(11),
+  &:nth-of-type(12) {
+    animation: rotation 380000ms linear 0s infinite reverse;
+
+    .intro-block {
+      transform: scale(1.489) rotate(289deg);
+    }
+  }
+
+  &:nth-of-type(1),
+  &:nth-of-type(3),
+  &:nth-of-type(5),
+  &:nth-of-type(7),
+  &:nth-of-type(9),
+  &:nth-of-type(11) {
+    z-index: 1000;
+  }
+}
+
+.blur {
+  filter: blur(5px);
+
+  /* mix-blend-mode: difference; */
+
+  z-index: 0;
+}
+
+.intro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #ff0000;
+
+  font-family: 'Rubik Microbe', system-ui;
+  font-weight: 400;
+  font-size: 150vh;
+
+  mix-blend-mode: difference;
+
+  &:nth-of-type(1) {
+    color: #c42a2a;
+  }
+
+  &:nth-of-type(2) {
+    color: #c20c0c;
+  }
+
+  &:nth-of-type(3) {
+    color: #800606;
+  }
+
+  &:nth-of-type(4) {
+    color: #ef2020;
+  }
+
+  &:nth-of-type(5) {
+    color: #b82525;
+  }
+
+  &:nth-of-type(6) {
+    color: #bf0808;
+  }
+
+  &:nth-of-type(7) {
+    color: #7c1919;
+  }
+
+  &:nth-of-type(8) {
+    color: #e11616;
+  }
+}
