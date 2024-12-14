@@ -1,13 +1,10 @@
-import React, { MouseEventHandler } from 'react'
+import type { Position } from '../types'
 
-import './App.css'
+import React from 'react'
 
-interface Position<T = number> {
-  x: T
-  y: T
-}
+import styles from './App.module.css'
 
-export function AppThree(): React.ReactNode {
+export function AppThree(): React.ReactElement {
   const appString: string = `58533665 798646767 7847568797 453427658798797 8766554586876 53424376576598787 87764656587676 454354746575`
 
   const appStringMax: number = appString
@@ -35,7 +32,6 @@ export function AppThree(): React.ReactNode {
     const canvas: HTMLCanvasElement = ctx.canvas
 
     let frameHandle: number
-    let frameHandleTwo: number
 
     let frameCount: number = 0
 
@@ -69,26 +65,23 @@ export function AppThree(): React.ReactNode {
 
     return (): void => {
       window.cancelAnimationFrame(frameHandle)
-      window.cancelAnimationFrame(frameHandleTwo)
     }
   }, [appString, appStringMax])
 
-  const onMouseMove = React.useCallback<MouseEventHandler<HTMLCanvasElement>>(
-    (event: React.MouseEvent<HTMLCanvasElement>): void => {
-      mousePosition.current.x = event.clientX
-      mousePosition.current.y = event.clientY
-    },
-    [],
-  )
+  const onMouseMove = React.useCallback<
+    React.MouseEventHandler<HTMLCanvasElement>
+  >((event: React.MouseEvent<HTMLCanvasElement>): void => {
+    mousePosition.current.x = event.clientX
+    mousePosition.current.y = event.clientY
+  }, [])
 
   return (
-    <>
-      <canvas
-        width={720}
-        height={270}
-        ref={canvasRef}
-        onMouseMove={onMouseMove}
-      />
-    </>
+    <canvas
+      className={`${styles.fit} ${styles['hue-rotate']}`}
+      width={720}
+      height={270}
+      ref={canvasRef}
+      onMouseMove={onMouseMove}
+    />
   )
 }
