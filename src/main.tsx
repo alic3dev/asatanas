@@ -1,16 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Analytics } from '@vercel/analytics/react'
-
 import { createBrowserRouter, redirect, RouterProvider } from 'react-router-dom'
 
-import { Intro } from './Intro.tsx'
-import { App } from './App.tsx'
-import { AppTwo } from './AppTwo.tsx'
-import { AppThree } from './AppThree.tsx'
-import { Alic3 } from './Alic3.tsx'
+import { Analytics } from '@vercel/analytics/react'
 
-import './index.css'
+import { Intro, App, AppTwo, AppThree } from '@/apps'
+import { Alic3 } from '@/Alic3.tsx'
+
+import '@/index.css'
 
 const router = createBrowserRouter([
   {

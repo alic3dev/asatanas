@@ -1,6 +1,10 @@
-import styles from './Alic3.module.css'
+import styles from '@/Alic3.module.css'
 
-export function Alic3({ header = false }: { header?: boolean }): JSX.Element {
+export function Alic3({
+  header = false,
+}: {
+  header?: boolean
+}): React.ReactElement {
   return (
     <h1 className={`${styles.title} ${header ? styles.header : ''}`}>
       <a className={styles['title-header']} href="https://alic3.dev">
