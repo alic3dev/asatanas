@@ -1,8 +1,8 @@
-import type { Position } from '../types'
+import type { Position } from '@/types'
 
 import React from 'react'
 
-import styles from './App.module.css'
+import styles from '@/apps/App.module.css'
 
 export function AppThree(): React.ReactElement {
   const appString: string = `58533665 798646767 7847568797 453427658798797 8766554586876 53424376576598787 87764656587676 454354746575`

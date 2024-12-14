@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './Intro.module.css'
+import styles from '@/apps/Intro.module.css'
 
 export function Intro(): React.ReactElement {
   return (

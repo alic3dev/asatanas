@@ -1,4 +1,4 @@
-export { Intro } from './Intro'
-export { App } from './App'
-export { AppTwo } from './AppTwo'
-export { AppThree } from './AppThree'
+export { Intro } from '@/apps/Intro'
+export { App } from '@/apps/App'
+export { AppTwo } from '@/apps/AppTwo'
+export { AppThree } from '@/apps/AppThree'

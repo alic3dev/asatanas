@@ -1,4 +1,4 @@
-import styles from './Alic3.module.css'
+import styles from '@/Alic3.module.css'
 
 export function Alic3({
   header = false,

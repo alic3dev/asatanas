@@ -1,8 +1,8 @@
-import type { Position } from '../types'
+import type { Position } from '@/types'
 
 import React from 'react'
 
-import styles from './App.module.css'
+import styles from '@/apps/App.module.css'
 
 export function AppTwo(): React.ReactElement {
   const appString: string = `
