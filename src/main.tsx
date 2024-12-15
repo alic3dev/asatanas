@@ -4,7 +4,7 @@ import { createBrowserRouter, redirect, RouterProvider } from 'react-router-dom'
 
 import { Analytics } from '@vercel/analytics/react'
 
-import { Intro, App, AppTwo, AppThree } from '@/apps'
+import { Intro, App, AppTwo, AppThree, AppFour } from '@/apps'
 import { Alic3 } from '@/Alic3.tsx'
 
 import '@/index.css'
@@ -12,6 +12,10 @@ import '@/index.css'
 const router = createBrowserRouter([
   {
     path: '/',
+    element: <AppFour />,
+  },
+  {
+    path: '/intro',
     element: <Intro />,
   },
   {
