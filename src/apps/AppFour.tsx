@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from '@/apps/AppFour.module.css'
+import styles from '@/apps/App.module.css'
 
 function initImageData(width: number, height: number): ImageData {
   return new ImageData(width, height, {
@@ -75,8 +75,6 @@ export function AppFour(): React.ReactElement {
         height={1080}
         ref={canvasRef}
       />
-
-      <div className={styles.war}>I declare war</div>
     </>
   )
 }
