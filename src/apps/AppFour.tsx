@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from '@/apps/App.module.css'
+
 function initImageData(width: number, height: number): ImageData {
   return new ImageData(width, height, {
     colorSpace: 'srgb',
